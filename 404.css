@@ -1,0 +1,25 @@
+*{
+    font-family:arial;
+}
+
+p.erreur-404{
+    color:black;
+    margin:0;
+}
+
+h1.erreur-404{
+    margin:0;
+    color:grey;
+    font-size:3em;
+}
+
+
+body{
+    margin: 7% auto 0;
+    max-width: 390px;
+}
+
+img.erreur-404{
+    height:390px;
+    width:390px;
+}
