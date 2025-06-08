@@ -95,6 +95,24 @@ p, a, h1, h2, h3, h4, h5, label, button {
 .light-mode {
   background-color: #f8f9fa;
 
+  .MuiInputBase-root {
+    color: #0d1116 !important;
+    background-color: white !important;
+  }
+
+  .MuiInputBase-input {
+    color: #0d1116 !important;
+    background-color: transparent !important;
+  }
+
+  .MuiFormLabel-root {
+    color: #0d1116 !important;
+  }
+  
+  .MuiFormHelperText-root {
+    color: #0d1116 !important;
+  }
+
   .navigation-bar {
     background-color: #f8f9fa;
   }
@@ -143,6 +161,78 @@ p, a, h1, h2, h3, h4, h5, label, button {
 
   .flex-chips .chip-title {
     color: #0d1116;
+  }
+}
+
+.dark-mode {
+  background-color: #0d1116;
+
+  .MuiInputBase-root {
+    color: #f8f9fa !important;
+    background-color: #1e1e1e !important;
+  }
+
+  .MuiInputBase-input {
+    color: #f8f9fa !important;
+    background-color: transparent !important;
+  }
+
+  .MuiFormLabel-root {
+    color: #f8f9fa !important;
+  }
+
+  .MuiFormHelperText-root {
+    color: #f8f9fa !important;
+  }
+
+  .navigation-bar {
+    background-color: #0d1116;
+  }
+
+  p, a, h1, h2, h3, h4, h5, label, button {
+    color: #f8f9fa;
+  }
+
+  a:hover {
+    color: #a580ff;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+  }
+
+  .navigation-bar svg {
+    color: #f8f9fa;
+  }
+
+  .about-section {
+    background-image: url("./assets/images/bg-dark.png");
+  }
+
+  .skills-container svg {
+    color: #f8f9fa;
+  }
+
+  .chip {
+    background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 3px 1px -2px rgba(255, 255, 255, 0.1), 0px 2px 2px 0px rgba(255, 255, 255, 0.06), 0px 1px 5px 0px rgba(255, 255, 255, 0.04);
+  }
+
+  .vertical-timeline::before {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+
+  .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
+    box-shadow: 0px 3px 1px -2px rgba(255, 255, 255, 0.1), 0px 2px 2px 0px rgba(255, 255, 255, 0.06), 0px 1px 5px 0px rgba(255, 255, 255, 0.04);
+  }
+
+  .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
+    color: lightgray;
+  }
+
+  .vertical-timeline-element-content-arrow {
+    border-right: 7px solid rgba(255, 255, 255, 0.08) !important;
+  }
+
+  .flex-chips .chip-title {
+    color: #f8f9fa;
   }
 }
 
