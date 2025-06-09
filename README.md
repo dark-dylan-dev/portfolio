@@ -1,7 +1,9 @@
 # Portfolio
 
-## Demo
+See the [website](https://dylan-hollemaert.fr/)
 
-View the [Demo](https://dark-dylan-dev.github.io/portfolio/).
-
+_Screenshot_
 ![Screenshot](./src/assets/images/screenshot.png)
+
+I'm not a web dev<br/>
+Template by [Yuji Sato](https://github.com/yujisatojr/react-portfolio-template)
