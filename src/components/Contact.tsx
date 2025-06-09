@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import '../assets/styles/Contact.scss';
+import emailjs from '@emailjs/browser';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import SendIcon from '@mui/icons-material/Send';
@@ -24,6 +25,26 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
+    if (name !== '' && email !== '' && message !== '') {
+      var templateParams = {
+        name: name,
+        email: email,
+        message: message
+      };
+
+      console.log(templateParams);
+      emailjs.send('service_mailtrap', 'template_contact_form', templateParams, 'gtAWj5JfPa-s9lmic').then(
+        (response) => {
+          console.log('SUCCESS!', response.status, response.text);
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
+      setName('');
+      setEmail('');
+      setMessage('');
+    }
   };
 
   return (
